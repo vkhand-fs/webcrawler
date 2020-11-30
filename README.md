@@ -12,8 +12,8 @@ The output should be a simple structured site map (this does not need to be a tr
 
 # Brief explanation of the solution:
 1. java.util.concurrent.CompletableFuture has been used to process each url asyncronounsly.
-2. Using Jsoup, we connect to every url and get the document object.
-3. Retrieve the link from document object and iterate through each link/url recursively and process them asynchronously.
+2. Using Jsoup, we connect to the url and get the document object.
+3. Retrieve the links/external links/images from document object and iterate through each link/url recursively and process them asynchronously.
 
 # What I could have done more
 1. Could have included more testcases with some mock html pages. 
