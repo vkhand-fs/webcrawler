@@ -33,7 +33,6 @@ public class WebCrawler {
 	public List<SiteElementsContainer> startCrawl(String url) throws InterruptedException, ExecutionException {
 		crawl(url);
 
-		Thread.sleep(10000);
 		while (!queue.isEmpty()) {
 			siteElementsContainerList.add(queue.poll().get());
 		}

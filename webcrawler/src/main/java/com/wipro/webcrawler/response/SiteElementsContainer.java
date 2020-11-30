@@ -64,8 +64,8 @@ public class SiteElementsContainer {
 
 	@Override
 	public String toString() {
-		return "SiteElementsContainer [parentUrl=" + parentUrl + ", links=" + links + ", externalLinks=" + externalLinks
-				+ ", images=" + images + "]";
+		return "=== Site Elements for Url: " + parentUrl + " ===" + "\n\n===links===\n" + links
+				+ "\n\n===externalLinks===\n" + externalLinks + "\n\n===images===\n" + images + "]";
 	}
 
 }

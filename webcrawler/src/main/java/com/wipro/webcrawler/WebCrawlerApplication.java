@@ -17,8 +17,8 @@ public class WebCrawlerApplication {
 
 		String domainUrl = args[0];
 		List<SiteElementsContainer> siteContainer = new WebCrawler(domainUrl).startCrawl(domainUrl);
-		siteContainer.forEach(container -> System.out.println("Crawling " + domainUrl + " " + container));
-
+		siteContainer.forEach(container -> System.out.println("=== Crawling " +domainUrl+" ===\n\n" + container));
+		
 	}
 
 }
